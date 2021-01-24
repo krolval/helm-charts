@@ -38,7 +38,7 @@ jobs:
             git commit -sam "Update Documentation" || true
             git push || true
           else
-            echo -e "\n\e[33m-- Root Direcoty not found: $CHART_ROOT\e[0m" && exit 0;
+            echo -e "\n\e[33m-- Root Directory not found: $CHART_ROOT\e[0m" && exit 0;
           fi
 
   release:

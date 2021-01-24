@@ -2,12 +2,11 @@ remote: origin
 chart-dirs:
   - charts
 chart-repos:
-  - buttahtoast=https://krolval.github.io/helm-charts/
-  - bedag=https://bedag.github.io/helm-charts/
+  - aquasec=https://krolval.github.io/helm-charts/
 check-version-increment: true
 debug: true
 validate-chart-schema: true
-validate-maintainers: true
+validate-maintainers: false
 validate-yaml: false
 all: true
 excluded-charts:
