@@ -1,0 +1,13 @@
+remote: origin
+chart-dirs:
+  - charts
+chart-repos:
+  - aquasec=https://krolval.github.io/helm-charts/
+check-version-increment: true
+debug: true
+validate-chart-schema: true
+validate-maintainers: false
+validate-yaml: false
+all: true
+excluded-charts:
+  - "library"
