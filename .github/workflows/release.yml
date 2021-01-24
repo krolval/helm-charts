@@ -2,10 +2,10 @@ name: Helm Chart Release
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   documentation:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     container:
       image: alpine
     steps:
@@ -14,6 +14,8 @@ jobs:
           apk add jq git curl
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Fetch history
         run: git fetch --prune --unshallow
@@ -42,7 +44,7 @@ jobs:
           fi
 
   release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs:
       - documentation
     steps:
@@ -56,3 +58,4 @@ jobs:
         uses: buttahtoast/helm-release-action@v1.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          charts_dir: charts
