@@ -1,5 +1,6 @@
 name: Helm Chart Release
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -50,9 +51,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Fetch history
-        run: git fetch --prune --unshallow
 
       - name: Helm Chart Publish
         uses: buttahtoast/helm-release-action@v1.1.0
