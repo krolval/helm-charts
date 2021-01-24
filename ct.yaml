@@ -2,7 +2,7 @@ remote: origin
 chart-dirs:
   - charts
 chart-repos:
-  - aquasec=https://krolval.github.io/helm-charts/
+  - aquasecurity-krol=https://krolval.github.io/helm-charts/
 check-version-increment: true
 debug: true
 validate-chart-schema: true
@@ -11,3 +11,4 @@ validate-yaml: false
 all: true
 excluded-charts:
   - "library"
+helm-extra-args: --timeout 600s
