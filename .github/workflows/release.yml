@@ -18,9 +18,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Fetch history
-        run: git fetch --prune --unshallow
-
       - name: Install Helm Docs
         run: |
           curl -s -L -o /usr/local/bin/helm-docs.tar.gz "https://github.com/norwoodj/helm-docs/releases/download/$(curl --silent "https://api.github.com/repos/norwoodj/helm-docs/releases/latest" | jq -r .tag_name)/helm-docs_$(curl --silent "https://api.github.com/repos/norwoodj/helm-docs/releases/latest" | jq -r .tag_name | cut -d "v" -f2-)_Linux_x86_64.tar.gz"
@@ -56,4 +53,4 @@ jobs:
         uses: buttahtoast/helm-release-action@v1.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          charts_dir: charts
+          chartRoot: charts/
