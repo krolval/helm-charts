@@ -63,7 +63,7 @@ jobs:
       - name: Helm Chart Publish
         uses: buttahtoast/helm-release-action@v1.1.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CR_TOKEN }}
           chartRoot: charts/
           kubeLinterDefaultConfig: kube-linter.yaml
 
