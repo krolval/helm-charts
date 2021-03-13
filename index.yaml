@@ -17,4 +17,20 @@ entries:
     urls:
     - https://github.com/aquasecurity/helm-charts/releases/download/starboard-operator-0.4.1/starboard-operator-0.4.1.tgz
     version: 0.4.1
+  trivy:
+  - apiVersion: v2
+    appVersion: 0.15.0
+    created: "2021-03-13T22:09:10.994255287Z"
+    description: Trivy helm chart
+    digest: 402a60eb4d859991d7e18d5681cb97247eadd97a33418d64e7c32a66bf6e73a4
+    keywords:
+    - scanner
+    - trivy
+    - vulnerability
+    name: trivy
+    sources:
+    - https://github.com/aquasecurity/trivy
+    urls:
+    - https://github.com/krolval/helm-charts/releases/download/trivy-0.4.2/trivy-0.4.2.tgz
+    version: 0.4.2
 generated: "2021-02-15T10:31:39.731411758Z"
