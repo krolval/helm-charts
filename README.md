@@ -25,6 +25,7 @@ helm init
 ```
 helm repo add aquasecurity-krol https://krolval.github.io/helm-charts/
 helm repo update
+helm search repo aquasecurity-krol -l  
 ```
 
 ## Installing the Chart
