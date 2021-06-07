@@ -36,7 +36,7 @@ helm status starboard
 ### Deploy a specific version
 
 ```bash
-helm install --name starboard --set image.tag=4.6.2 aquasecurity-krol/starboard-operator
+helm install my-starboard --set image.tag=4.6.2 aquasecurity-krol/starboard-operator
 ```
 
 ### Upgrading chart
