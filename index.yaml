@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   demo:
   - apiVersion: v2
+    appVersion: v1.0.2
+    created: "2022-04-22T03:06:00.721590107Z"
+    description: A Helm chart for Kubernetes
+    digest: 7314ee3319d073ee5a1df6c7bcdb8ddb5edf56eeee876681d76189612adb76c5
+    name: demo
+    type: application
+    urls:
+    - https://github.com/krolval/helm-charts/releases/download/demo-v1.0.2/demo-v1.0.2.tgz
+    version: v1.0.2
+  - apiVersion: v2
     appVersion: v1.0.1
     created: "2022-04-22T02:57:14.307237538Z"
     description: A Helm chart for Kubernetes
@@ -155,4 +165,4 @@ entries:
     urls:
     - https://github.com/krolval/helm-charts/releases/download/trivy-0.4.2/trivy-0.4.2.tgz
     version: 0.4.2
-generated: "2022-04-22T02:57:14.307341939Z"
+generated: "2022-04-22T03:06:00.721634408Z"
